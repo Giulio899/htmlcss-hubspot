@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #33475b;
+}
+
 /* inizio proprietà comuni */
 .container {
   width: 70%;
@@ -18,7 +23,7 @@
   background-color: #fff;
 }
 
-.orange {
+.lightorange {
   background-color: #FFF2EE;
 }
 
@@ -31,6 +36,42 @@
 .float {
   float:left;
 }
+
+.btn {
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.btn.orange {
+  color: white;
+  background-color: #fe775a;
+}
+
+.btn.border-orange {
+  color: #fe775a;
+  border: 1px solid #fe775a;
+}
+
+.btn.border-orange:hover {
+  color: white;
+  background-color: #fe775a;
+}
+
+.btn.orange:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: #fe775a;
+}
+
+
+a {
+  text-decoration: none;
+  color: #33475b;
+}
+
+ul {
+  list-style-type: none;
+}
+
 /* /proprietà comuni */
 
 
@@ -47,16 +88,72 @@ header {
   border-bottom: 1px solid black;
 }
 
-.header-top .container .meta-info-left {
-  width: 75%;
-  height: 70px;
-  background-color: orange;
-}
-
-.header-top .container .meta-info-right {
+/* Inizio header-top left */
+.header-top .meta-info-left {
   width: 25%;
   height: 70px;
-  background-color: violet;
+}
+
+.header-top .meta-info-left .fa-globe-europe {
+  padding-right: 5px;
+}
+
+.header-top .meta-info-left .fa-angle-down {
+  padding-left: 5px;
+}
+
+.header-top .meta-info-left ul li:first-child a {
+  padding-right: 15px;
+  border-right: 1px solid #33475b;
+}
+
+.header-top .meta-info-left ul li:last-child {
+  padding-left: 15px;
+}
+/* /header-top left */
+
+/* inizio classi comuni a header top left e right */
+.header-top ul {
+  height: 70px;
+}
+
+.header-top ul li {
+  display: inline-block;
+  line-height: 70px;
+}
+/* /classi comuni a header top left e right */
+
+
+/* Inizio header top right */
+.header-top .meta-info-right {
+  text-align: right;
+}
+
+.header-top .meta-info-right ul li {
+  padding-left: 15px;
+}
+
+.header-top .meta-info-right .fa-search {
+  color: #00a4bd;
+}
+
+/* /header top right */
+
+
+
+/* .header-top .meta-info-left ul li {
+  width: 49%;
+  line-height: 70px;
+}
+
+
+.header-top .meta-info-left i {
+  padding: 5px;
+} */
+
+.header-top .meta-info-right {
+  width: 75%;
+  height: 70px;
 }
 /* /header-top */
 
