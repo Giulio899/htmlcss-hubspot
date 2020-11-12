@@ -81,10 +81,19 @@ header {
   background-color: lightgrey;
 }
 
+/* inizio classi comuni a header top e header nav */
+.header-top ul, .header-nav ul {
+  height: 70px;
+}
+
+.header-top ul li, .header-nav ul li {
+  display: inline-block;
+  line-height: 70px;
+}
+/* /classi comuni a header top left e right */
+
 /* Inizio header-top */
 .header-top {
-  /* proprietà da cancellare
-  height: 70px; */
   border-bottom: 1px solid black;
 }
 
@@ -112,17 +121,6 @@ header {
 }
 /* /header-top left */
 
-/* inizio classi comuni a header top left e right */
-.header-top ul {
-  height: 70px;
-}
-
-.header-top ul li {
-  display: inline-block;
-  line-height: 70px;
-}
-/* /classi comuni a header top left e right */
-
 
 /* Inizio header top right */
 .header-top .meta-info-right {
@@ -138,30 +136,41 @@ header {
 .header-top .meta-info-right .fa-search {
   color: #00a4bd;
 }
-
 /* /header top right */
 /* /header-top */
 
 
 /* Inizio header-nav */
-.header-nav {
-  /* proprietà da cancellate
-  height: 70px; */
-}
 
 .header-nav .logo {
   width: 10%;
   height: 70px;
-  background-color: pink;
+  position: relative;
+}
+
+.header-nav .logo img {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .header-nav nav {
   width: 90%;
   height: 70px;
-  background-color: green;
+  text-align: right;
+}
+
+.header-nav nav ul li {
+  padding-left: 15px;
+}
+
+.header-nav nav .fa-angle-down {
+  padding-left: 10px;
 }
 /* /header-nav */
 
+/* Inizio header-bottom */
 .header-bottom {
   height: 560px;
 }
