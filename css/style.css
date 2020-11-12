@@ -1,1 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/* inizio proprietà comuni */
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+.skyblue {
+  background-color: #f4f9fd;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.orange {
+  background-color: #FFF2EE;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.float {
+  float:left;
+}
+/* /proprietà comuni */
+
+
+/* Inizio header */
+header {
+  height: 700px;
+  background-color: lightgrey;
+}
+
+/* Inizio header-top */
+.header-top {
+  /* proprietà da cancellare
+  height: 70px; */
+  border-bottom: 1px solid black;
+}
+
+.header-top .container .meta-info-left {
+  width: 75%;
+  height: 70px;
+  background-color: orange;
+}
+
+.header-top .container .meta-info-right {
+  width: 25%;
+  height: 70px;
+  background-color: violet;
+}
+/* /header-top */
+
+
+/* Inizio header-nav */
+.header-nav {
+  /* proprietà da cancellate
+  height: 70px; */
+}
+
+.header-nav .logo {
+  width: 10%;
+  height: 70px;
+  background-color: pink;
+}
+
+.header-nav nav {
+  width: 90%;
+  height: 70px;
+  background-color: green;
+}
+/* /header-nav */
+
+.header-bottom {
+  height: 560px;
+}
+
+
+/* Da qui in poi come indicato da Cristina ho solo creato le sezioni come "segnaposto" */
+
+main {
+  height: 800px;
+  background-color: darkgrey;
+}
+
+footer {
+  height: 300px;
+  background-color: grey;
+}
