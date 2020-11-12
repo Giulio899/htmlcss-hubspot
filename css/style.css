@@ -91,6 +91,12 @@ header {
 /* Inizio header-top */
 .header-top {
   border-bottom: 1px solid black;
+  height: 70px;
+  /* da capire meglio */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
 }
 
 /* Inizio header-top left */
@@ -137,6 +143,10 @@ header {
 
 
 /* Inizio header-nav */
+
+.header-nav {
+  margin-top: 70px;
+}
 
 .header-nav .logo {
   width: 10%;
