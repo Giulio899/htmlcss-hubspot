@@ -41,6 +41,8 @@ body {
 .btn.orange {
   color: white;
   background-color: #fe775a;
+  /* aggiungere il bordo in modo che non sia più piccolo del pulsante a fianco */
+  border: 1px solid #fe775a;
 }
 
 .btn.border-orange {
@@ -58,6 +60,9 @@ body {
   color: #fe775a;
 }
 
+h1  {
+  font-size: 46px;
+}
 
 a {
   text-decoration: none;
@@ -197,6 +202,24 @@ header {
   background-color: #afebe4;
 }
 
+.header-bottom .jumbotron {
+  width: 50%;
+  padding-top: 60px;
+}
+
+.header-bottom .jumbotron p {
+  padding: 30px 0 40px 0;
+}
+
+.header-bottom .jumbotron a {
+  padding: 15px 25px;
+}
+
+.header-bottom .jumbotron span {
+  display: block;
+  margin-top: 40px;
+  font-size: 12px;
+}
 
 /* Da qui in poi come indicato da Cristina ho solo creato le sezioni come "segnaposto" */
 
