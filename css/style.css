@@ -7,6 +7,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: #33475b;
+  font-size: 16px;
 }
 
 /* inizio proprietà comuni */
@@ -41,7 +42,7 @@ body {
 .btn.orange {
   color: white;
   background-color: #fe775a;
-  /* aggiungere il bordo in modo che non sia più piccolo del pulsante a fianco */
+  /* ho aggiunto il bordo in modo che non sia più piccolo del pulsante a fianco */
   border: 1px solid #fe775a;
 }
 
@@ -61,7 +62,15 @@ body {
 }
 
 h1  {
-  font-size: 46px;
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.4em;
 }
 
 a {
@@ -71,37 +80,27 @@ a {
 
 ul {
   list-style-type: none;
+  height: 70px;
+  line-height: 70px;
 }
+
+li {
+  display: inline-block;
+}
+
 
 /* /proprietà comuni */
 
 
 /* Inizio header */
-header {
-  /* height: 700px; */
-  background-color: lightgrey;
-}
-
-/* inizio classi comuni a header top e header nav */
-.header-top ul, .header-nav ul {
-  height: 70px;
-}
-
-.header-top ul li, .header-nav ul li {
-  display: inline-block;
-  line-height: 70px;
-}
-/* /classi comuni a header top left e right */
-
 /* Inizio header-top */
 .header-top {
-  border-bottom: 1px solid black;
+  width: 100%;
   height: 70px;
-  /* da capire meglio */
   position: fixed;
   top: 0;
-  width: 100%;
-  z-index: 999;
+  z-index: 1;
+  border-bottom: 1px solid #33475b;
 }
 
 /* Inizio header-top left */
@@ -118,9 +117,8 @@ header {
   padding-left: 5px;
 }
 
-.header-top .meta-info-left ul li:first-child a {
+.header-top .meta-info-left ul li:first-child {
   padding-right: 15px;
-  border-right: 1px solid #33475b;
 }
 
 .header-top .meta-info-left ul li:last-child {
@@ -182,24 +180,26 @@ header {
 
 /* Inizio header-bottom */
 .header-bottom {
-  height: 620px;
+  height: 680px;
+  box-shadow: inset 0 10px 8px rgba(0, 0, 0, 0.1);
   background-image: url('../img/jumbotron.png');
-  background-size: 85%;
+  /* Non inserire la proprietà background-size altrimenti l'immagine si ridimensiona in base alla grandezza del browser e questo fa sfasare la barra posizionata in fondo all'immagine. */
+  /* background-size : 85%; */
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: bottom right;
   background-color: #fff4ef;
   position: relative;
 }
 
-/* questa parte sotto del .restyle-bg non credo sia il modo corretto per gestire la prosecuzione dell'immagine: verificare domani a lezione */
 .restyle-bg {
   width: 100%;
-  height: 72px;
+  height: 85px;
   position: absolute;
   left: 0;
   bottom: 0;
-  border-top: 4px solid #33475b;
   background-color: #afebe4;
+  border-top: 4px solid #33475b;
+  border-bottom: 4px solid #33475b;
 }
 
 .header-bottom .jumbotron {
@@ -218,17 +218,122 @@ header {
 .header-bottom .jumbotron span {
   display: block;
   margin-top: 40px;
-  font-size: 12px;
+  font-size: 0.75em;
 }
 /* /header-bottom */
 /* /header */
 
 
-/* Da qui in poi come indicato da Cristina ho solo creato le sezioni come "segnaposto" */
-
+/* Inizio main */
 main {
-  height: 800px;
+  /* proprietà da rimuovere alla fine */
+  height: 2000px;
   background-color: darkgrey;
+  /* /proprietà da rimuovere */
+}
+
+main #stripe1 {
+  height: 1000px;
+  background-color: #F4F9FD;
+}
+
+/* Inizio fascia 1 top */
+main #stripe1 .stripe1-top {
+  width: 75%;
+  margin: auto;
+  text-align: center;
+  padding: 40px 0;
+}
+
+main #stripe1 .stripe1-top img {
+  width: 40%;
+}
+
+main #stripe1 .stripe1-top h2 {
+  padding: 30px 0;
+}
+/* /fascia 1 top */
+
+/* Inizio fascia 1 center */
+
+main #stripe1 .stripe1-center {
+  width: 100%;
+  /* height: 300px; */
+  padding: 60px 0;
+  background-color: white;
+  border: 1px solid #e6ecf1;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #ced8df;
+
+}
+
+main #stripe1 .stripe1-center-left {
+  width: 30%;
+  text-align: center;
+}
+
+main #stripe1 .stripe1-center-left img {
+  width: 45%;
+  margin-bottom: 30px;
+}
+
+main #stripe1 .stripe1-center-left a {
+  padding: 15px 25px;
+}
+
+main #stripe1 .stripe1-center-right {
+  width: 70%;
+  padding-left: 30px;
+  padding-right: 60px;
+
+}
+
+main #stripe1 .stripe1-center-right p {
+  padding: 30px 0 30px 0;
+}
+
+main #stripe1 .stripe1-center-right span {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Per la linea orizzontale mi sono arrangiato così ma non mi piace molto: poi con calma cerco un metodo migliore */
+main #stripe1 .stripe1-center-right hr {
+  display: inline-block;
+  margin-left: 20px;
+  width: 350px;
+  position: relative;
+  bottom: 5px;
+  border: 1px solid #33475b;
+  background-color: #33475b;
+}
+
+main #stripe1 .stripe1-center-right ul {
+  margin-top: 10px;
+}
+
+main #stripe1 .stripe1-center-right li {
+  padding-right: 15px;
+}
+
+main #stripe1 .stripe1-center-right a:hover {
+  text-decoration: underline;
+}
+
+main #stripe1 .stripe1-center-right .fa-check-circle {
+  font-size: 0.9em;
+  color: #fe775a;
+  padding-right: 10px;
+}
+
+main #stripe2 {
+  height: 100px;
+  background-color: yellow;
+}
+
+main #stripe3 {
+  height: 100px;
+  background-color: orange;
 }
 
 footer {
