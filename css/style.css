@@ -88,6 +88,11 @@ li {
   display: inline-block;
 }
 
+.fa-check-circle {
+  font-size: 0.9em;
+  color: #fe775a;
+  padding-right: 10px;
+}
 
 /* /proprietà comuni */
 
@@ -227,13 +232,12 @@ li {
 /* Inizio main */
 main {
   /* proprietà da rimuovere alla fine */
-  height: 2000px;
+  height: 2500px;
   background-color: darkgrey;
   /* /proprietà da rimuovere */
 }
 
 main #stripe1 {
-  height: 1000px;
   background-color: #F4F9FD;
 }
 
@@ -255,16 +259,13 @@ main #stripe1 .stripe1-top h2 {
 /* /fascia 1 top */
 
 /* Inizio fascia 1 center */
-
 main #stripe1 .stripe1-center {
   width: 100%;
-  /* height: 300px; */
   padding: 60px 0;
   background-color: white;
   border: 1px solid #e6ecf1;
   border-radius: 5px;
   box-shadow: 0 0 5px #ced8df;
-
 }
 
 main #stripe1 .stripe1-center-left {
@@ -285,7 +286,6 @@ main #stripe1 .stripe1-center-right {
   width: 70%;
   padding-left: 30px;
   padding-right: 60px;
-
 }
 
 main #stripe1 .stripe1-center-right p {
@@ -320,10 +320,57 @@ main #stripe1 .stripe1-center-right a:hover {
   text-decoration: underline;
 }
 
-main #stripe1 .stripe1-center-right .fa-check-circle {
-  font-size: 0.9em;
-  color: #fe775a;
-  padding-right: 10px;
+/* /fascia 1 center */
+
+
+/* Inizio fascia 1 bottom */
+main #stripe1 .stripe1-bottom {
+  margin-top: 40px;
+}
+
+main #stripe1 .box-w33 {
+  width: 30%;
+  padding: 20px 50px;
+  background-color: white;
+  border-right: 1px solid white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #ced8df;
+  text-align: center;
+}
+
+main #stripe1 .box-w33:nth-child(2) {
+  margin: 0 5%;
+}
+
+
+main #stripe1 .box-w33 img {
+  height: 100px;
+}
+
+main #stripe1 .box-w33 h3 {
+  margin: 15px 0 25px 0;
+}
+
+main #stripe1 .box-w33 hr {
+  margin: 60px 0 40px 0;
+}
+
+main #stripe1 .box-w33 span {
+  text-transform: uppercase;
+  font-weight: bold;
+  /* verificare se il padding non prende con inline */
+  display: inline-block;
+  padding-bottom: 30px;
+}
+
+main #stripe1 .box-w33 ul {
+  line-height: 1.2;
+  text-align: left;
+}
+
+
+main #stripe1 .box-w33 ul li {
+  display: block;
 }
 
 main #stripe2 {
