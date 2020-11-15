@@ -172,6 +172,7 @@ header {
 /* Inizio header-nav */
 .header-nav {
   /* Queste proprietà servono per rendere il menu sticky */
+  position: -webkit-sticky; /* Safari */
   position: sticky;
   top: -1px;
   z-index: 1;
