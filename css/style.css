@@ -12,7 +12,7 @@ body {
 
 /* inizio proprietà comuni */
 .container {
-  width: 70%;
+  width: 75%;
   margin: auto;
 }
 
@@ -61,6 +61,19 @@ body {
   color: #fe775a;
 }
 
+.btn.grey {
+  color: #32495b;
+  background-color: #dadee0;
+  /* ho aggiunto il bordo in modo che non sia più piccolo del pulsante a fianco */
+  border: 1px solid #dadee0;
+}
+
+.btn.grey:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: #dadee0;
+  border: 1px solid #dadee0;
+}
+
 h1  {
   font-size: 3em;
 }
@@ -99,14 +112,23 @@ li {
 
 /* Inizio header */
 /* Inizio header-top */
+
+header {
+  /* Questa proprietà serve per sganciare il menu sticky dall'header, in modo che continui a vedersi anche scorrendo la pagina sotto all'header. */
+  display: unset;
+}
+
 .header-top {
   width: 100%;
   height: 70px;
-  position: fixed;
+  border-bottom: 1px solid #33475b;
+  /* Per rendere questo menu fixed inserire il codice sotto (nel caso va però modificato il menu sotto .header-nav) */
+  /* position: fixed;
   top: 0;
   z-index: 1;
-  border-bottom: 1px solid #33475b;
+  border-bottom: 1px solid #33475b; */
 }
+
 
 /* Inizio header-top left */
 .header-top .meta-info-left {
@@ -131,7 +153,6 @@ li {
 }
 /* /header-top left */
 
-
 /* Inizio header top right */
 .header-top .meta-info-right {
   width: 75%;
@@ -152,7 +173,10 @@ li {
 
 /* Inizio header-nav */
 .header-nav {
-  margin-top: 70px;
+  height: 70px;
+  position: sticky;
+  top: -1px;
+  z-index: 1;
 }
 
 .header-nav .logo {
@@ -230,15 +254,11 @@ li {
 
 
 /* Inizio main */
-main {
-  /* proprietà da rimuovere alla fine */
-  height: 2500px;
-  background-color: darkgrey;
-  /* /proprietà da rimuovere */
-}
 
+/* Inizio fascia 1 */
 main #stripe1 {
   background-color: #F4F9FD;
+  padding: 40px 0 50px 0;
 }
 
 /* Inizio fascia 1 top */
@@ -246,7 +266,6 @@ main #stripe1 .stripe1-top {
   width: 75%;
   margin: auto;
   text-align: center;
-  padding: 40px 0;
 }
 
 main #stripe1 .stripe1-top img {
@@ -262,6 +281,7 @@ main #stripe1 .stripe1-top h2 {
 main #stripe1 .stripe1-center {
   width: 100%;
   padding: 60px 0;
+  margin-top: 40px;
   background-color: white;
   border: 1px solid #e6ecf1;
   border-radius: 5px;
@@ -330,7 +350,7 @@ main #stripe1 .stripe1-bottom {
 
 main #stripe1 .box-w33 {
   width: 30%;
-  padding: 20px 50px;
+  padding: 20px 30px;
   background-color: white;
   border-right: 1px solid white;
   border-radius: 5px;
@@ -341,7 +361,6 @@ main #stripe1 .box-w33 {
 main #stripe1 .box-w33:nth-child(2) {
   margin: 0 5%;
 }
-
 
 main #stripe1 .box-w33 img {
   height: 100px;
@@ -368,22 +387,228 @@ main #stripe1 .box-w33 ul {
   text-align: left;
 }
 
-
 main #stripe1 .box-w33 ul li {
   display: block;
 }
+/* /fascia 1 bottom */
+/* /fascia 1 */
 
+
+/* Inizio fascia 2 */
 main #stripe2 {
-  height: 100px;
-  background-color: yellow;
+  background-image: linear-gradient(to right, #00A8B9, #00BAA8);
+  padding: 40px 0 90px 0;
+  text-align: center;
+  color: white;
 }
 
+main #stripe2 h2 {
+  padding: 0 50px;
+}
+
+main #stripe2 p {
+  margin: 30px 0 50px 0;
+}
+
+main #stripe2 ul {
+  /* Ho inserito questa proprietà per annullare l'height data a ul alla riga 83 */
+  height: auto;
+  line-height: 2;
+}
+
+main #stripe2 ul li {
+  display: block;
+  width: 25%;
+  padding: 20px 0;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+}
+
+#stripe2 ul li:nth-child(4),
+#stripe2 ul li:last-child {
+  border-right: none;
+}
+
+#stripe2 ul li:nth-child(1n+5) {
+  border-bottom: none;
+}
+
+main #stripe2 ul li img {
+  height: 40px;
+}
+
+main #stripe2 ul li span {
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+main #stripe2 ul li span:after {
+  content:' +';
+  font-weight: normal;
+  font-size: 0.7em;
+  position: relative;
+  bottom: 2px;
+}
+/* /fascia 2 */
+
+
+/* Inizio fascia 3 */
 main #stripe3 {
-  height: 100px;
-  background-color: orange;
+  /* height: 660px; */
+  padding-bottom: 40px;
+
 }
 
-footer {
-  height: 300px;
-  background-color: grey;
+main #stripe3 .stripe3-top {
+  padding: 30px 0 50px 0;
 }
+
+
+main #stripe3 .stripe3-top-left {
+  width: 30%;
+  padding: 0 80px;
+}
+
+main #stripe3 .stripe3-top-left p span {
+  display: block;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+main #stripe3 .stripe3-top-right {
+  width: 60%;
+  margin-left: 10%;
+}
+
+
+main #stripe3 .stripe3-top-right .item {
+  width: 25%;
+  height: 65px;
+  line-height: 65px;
+  padding: 5px 0;
+}
+
+main #stripe3 .stripe3-top-right img {
+  max-width: 60%;
+  vertical-align: middle;
+}
+
+main #stripe3 .stripe3-bottom-left {
+  width: 40%;
+  padding-top: 30px;
+}
+
+main #stripe3 .stripe3-bottom-left p {
+  margin: 30px 0 40px 0;
+}
+
+main #stripe3 .stripe3-bottom-left a {
+  padding: 15px 25px;
+
+}
+
+main #stripe3 .stripe3-bottom-left small {
+  display: block;
+  margin-top: 50px;
+}
+
+main #stripe3 .stripe3-bottom-right {
+  width: 60%;
+  text-align: right;
+}
+
+main #stripe3 .stripe3-bottom-right img {
+  width: 40%;
+}
+
+/* Inizio footer */
+footer {
+  background-color: #32495b;
+  padding-bottom: 40px;
+}
+
+/* Inizio footer-top */
+footer .footer-top {
+  padding-bottom: 60px;
+}
+
+footer .footer-top ul {
+  width: 25%;
+  height: auto;
+  line-height: 2;
+}
+
+footer .footer-top ul li {
+  display: block;
+}
+
+footer .footer-top ul li:first-child {
+  padding: 20px 0;
+}
+
+footer .footer-top ul li a {
+  color: #cbd6e2;
+}
+
+footer .footer-top ul li:first-child a {
+  color: white;
+}
+
+footer .footer-top ul:last-child li:nth-child(7) {
+  margin: 15px 0;
+}
+
+footer .footer-top .fab {
+  padding-right: 20px;
+}
+/* /footer-top */
+
+/* Inizio footer-center */
+footer .footer-center {
+  padding: 20px 0;
+  border-bottom: 1px solid #cbd6e2;
+}
+
+footer .footer-center ul {
+  height: auto;
+  line-height: 2;
+  text-align: center;
+}
+
+footer .footer-center ul li {
+  padding: 0 15px;
+}
+
+footer .footer-center ul li a {
+  color: #cbd6e2;
+}
+/* /footer-center */
+
+/* Inizio footer-bottom */
+footer .footer-bottom {
+  padding-top: 30px;
+}
+
+footer .footer-bottom .footer-bottom-left {
+  width: 50%;
+}
+
+footer .footer-bottom .footer-bottom-left small {
+  display: block;
+  color: #cbd6e2;
+}
+
+footer .footer-bottom .footer-bottom-right {
+  width: 50%;
+  text-align: right;
+}
+
+footer .footer-bottom .footer-bottom-right a {
+  color: #cbd6e2;
+  margin-left: 20px;
+}
+/* /footer-bottom */
+/* footer */
