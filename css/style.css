@@ -612,3 +612,65 @@ footer .footer-bottom .footer-bottom-right a {
 }
 /* /footer-bottom */
 /* footer */
+
+/* chat fixed */
+.chat-fixed {
+  font-size: 0.9em;
+  /* border: 1px solid black; */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* chat-fixed-top */
+.chat-fixed .chat-fixed-top {
+  width: 238px;
+  padding: 35px 10px;
+  background-color: white;
+  box-shadow: 0 0 5px #ced8df;
+  border-radius: 5px;
+  position: relative;
+}
+
+.chat-fixed .chat-fixed-top .fa-times {
+  color: rgba(124, 152, 182, 0.5);
+  font-size: 1.1em;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.chat-fixed .chat-fixed-top img {
+  width: 22%;
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* /chat-fixed-top */
+
+/* chat-fixed-bottom */
+.chat-fixed .chat-fixed-bottom {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.chat-fixed .chat-fixed-bottom a {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  background-color: #425b76;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.chat-fixed .chat-fixed-bottom a:hover {
+  box-shadow: 0 0 15px rgba(66, 91, 119, 0.6);
+}
+
+.chat-fixed .chat-fixed-bottom .fa-comment-alt {
+  color: white;
+  font-size: 2em;
+  vertical-align: middle;
+}
