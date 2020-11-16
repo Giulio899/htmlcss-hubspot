@@ -111,20 +111,21 @@ li {
 
 
 /* Inizio header */
-header {
-  /* Questa proprietà serve per sganciare il menu sticky dall'header, in modo che continui a vedersi anche scorrendo la pagina sotto all'header. */
+/* header {
+  Questa proprietà servirebbe nel caso attivassimo il menu sticky per sganciare il menu sticky dall'header, in modo che continui a vedersi anche scorrendo la pagina sotto all'header.
   display: unset;
-}
+} */
+
 /* Inizio header-top */
 .header-top {
   width: 100%;
   height: 70px;
   border-bottom: 1px solid #33475b;
-  /* Per rendere questo menu fixed inserire il codice sotto (nel caso va però modificato il menu sotto .header-nav) */
-  /* position: fixed;
+  /* Questo serve per rendere il menu fixed */
+  position: fixed;
   top: 0;
   z-index: 1;
-  border-bottom: 1px solid #33475b; */
+  border-bottom: 1px solid #33475b;
 }
 
 
@@ -171,11 +172,12 @@ header {
 
 /* Inizio header-nav */
 .header-nav {
-  /* Queste proprietà servono per rendere il menu sticky */
-  position: -webkit-sticky; /* Safari */
+  margin-top: 70px;
+  /* Queste proprietà servono se vogliamo rendere il menu sticky */
+  /* position: -webkit-sticky; Safari
   position: sticky;
   top: -1px;
-  z-index: 1;
+  z-index: 1; */
 }
 
 .header-nav .logo {
